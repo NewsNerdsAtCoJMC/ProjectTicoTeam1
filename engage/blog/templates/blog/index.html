@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blog post</title>
+</head>
+<body>
+
+
+<ul>
+{% for object in author_line%}
+<li>{{ object.name }}</li>
+<li>{{ object.bio }}</li>
+<li>{{ object.mugshot }}</li>
+{% endfor %}</ul>
+
+<ul>
+{% for object in post_line%}
+<li>{{ object.date }}</li>
+<li>{{ object.headline }}</li>
+<li>{{ object.text }}</li>
+<li>{{ object.images }}</li>
+{% endfor %}</ul>    
+    
+</body>
+</html>
