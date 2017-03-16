@@ -4,12 +4,12 @@ class Author(models.Model):
     name = models.CharField(max_length=255)
     name_slug = models.SlugField()
     bio = models.TextField()
-    mugshot = models.ImageField(upload_to="Users/lera_alfimova/ProjectTicoTeam1/engage/engage/uploads/", max_length=100, blank=True, null=True)
+    mugshot = models.ImageField(upload_to="Users/lera_alfimova/ProjectTicoTeam1/engage/engage/uploads/", blank=True, null=True)
     def __str__(self):
         return self.name
 
 class Image(models.Model):
-    image = models.ImageField(upload_to="Users/lera_alfimova/ProjectTicoTeam1/engage/engage/uploads/", height_field=600, width_field=800, max_length=100)
+    image = models.ImageField(upload_to="Users/lera_alfimova/ProjectTicoTeam1/engage/engage/uploads/")
     cutline = models.TextField()
     credit = models.ManyToManyField(Author)
     def __str__(self):
@@ -21,5 +21,6 @@ class Post(models.Model):
     text = models.TextField()
     images = models.ManyToManyField(Image)
     author = models.ManyToManyField(Author)
+    publication_date = models.DateTimeField()
     def __str__(self):
         return self.headline

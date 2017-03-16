@@ -3,9 +3,10 @@ from django.contrib import admin
 # Register your models here.
 from django.contrib import admin
 
-from .models import Author, Post
+from .models import Author, Post, Image
 
 admin.site.register(Author)
 admin.site.register(Post)
+admin.site.register(Image)
 
 
