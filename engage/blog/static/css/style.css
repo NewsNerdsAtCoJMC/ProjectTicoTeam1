@@ -1,0 +1,344 @@
+* {
+   font-family: sans-serif; 
+}
+
+.logo {color:#F24034}
+
+body {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+h1 { 
+font-size: 2em;
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+
+
+h2 {
+	font-size: 1.5em;
+	
+}
+
+
+
+h1 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
+
+p, ul, ol {
+    font-size: 1em;   
+}
+
+a:link {
+    color: #F24034;
+    text-decoration: none;
+}
+a:visited {
+    color: dimgray;
+    text-decoration: underline;
+    font-style: italic;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+header {
+  background-image:url(http://projectcontrol.com/wp-content/uploads/2015/06/c_2073_0002-copy-e1439213780228.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.headertext {
+    position: absolute; top: 60px; left: 40px; text-align: center; color: white;
+}
+
+.text { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+
+group {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* Grid */
+.container-fluid {
+    max-width: 1200px; 
+    background-color: #ffffff;
+    padding: 0;
+}
+
+
+
+.blog-headline {
+    color: #F24034;
+   position: relative;
+margin: 2em;
+text-align: center; 
+}
+
+.portfolio-item1 {margin-left: 200px;
+padding-bottom: 2em;
+}
+
+.portfolio-item2 {margin-left: 6em;
+}
+
+.modaltext {padding-top: 2em;
+}
+
+.img-recent {
+	width: 341px;
+	height: 200px;
+}
+
+text-muted small {font-size: 3em;
+}
+
+.img-circle {
+    border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+}
+
+.secondrow {margin-top: 2em;
+}
+
+.footer {margin-top: 10em;
+}
+
+.pagination-sm {margin-left: 2em;
+}
+
+.last {margin-top: 1em;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #F24034;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #F24034;
+}
+
+
+/* Contact form */
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #F24034;
+}
+
+body {
+	background-color: #ffffff;
+	padding: 50px;
+	text-align: center;
+}
+
+.media_small {
+    width:50px;
+    height: 25px;
+}
+
+@charset "UTF-8";
+/* CSS Document */
+body {
+	
+}
+
+* {
+	font-family: sans-serif;
+}
+
+
+.margintop {
+	margin-top: 1.5em;
+	margin: 1.5em 0 0 0;
+}
+
+
+p, ul, ol {
+	font-size: 1em
+}
+
+a:link {
+	color:black;
+	text-decoration: none;
+}
+
+a:hover {
+	color:  #F24034;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: darkred;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+
+/*Grid*/
+.container-fluid {
+	max-width: 1200px;
+	background-color: #ffffff;
+	padding: 0;
+}
+
+/*Navigation*/
+nav {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	width: 25%;
+	display: inline;
+	float: left;
+}
+
+nav li a:link, nav li a:visited {
+	color: #666;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+nav li a:hover {
+	background-color: rgb(180, 180, 180);
+}
+
+/*Styles*/
+img {
+	max-width: 100%;
+}
+
+.white {
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+
+.text {
+	padding: 1em;
+	margin: 1em;
+	text-align: justify;
+}
+
+/*new styles*/
+.img-circle {
+    border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+}
+
+.img-recent {
+	width: 341px;
+	height: 200px;
+}
+
+a {
+target-name: new; 
+target-new: tab;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+background-image: 
+	   /* top, transparent red */
+	   linear-gradient(
+		 rgba(0, 0, 0, 0.45), 
+		 rgba(0, 0, 0, 0.45)
+	   ),
+	   /* your image */
+	   url(http://newsroom.unl.edu/announce/files/file14021.png);
+	
+	background-attachment: scroll;
+	background-size:cover;
+	background-position: center;
+	position:relative;
+	color:#fff;
+	
+	
+}
+
+
+
+
