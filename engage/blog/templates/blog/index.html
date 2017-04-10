@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="row center-xs">
+<div class="row center-xs content">
 <ul>
 {% for object in author_line%}
 <li>{{ object.name }}</li>
@@ -12,7 +12,7 @@
 
 <ul>
 {% for object in post_line%}
-<li>{{ object.date }}</li>
+<li>{{ object.publication_date }}</li>
 <li>{{ object.headline }}</li>
 <li>{{ object.text }}</li>
 <li>{{ object.images }}</li>

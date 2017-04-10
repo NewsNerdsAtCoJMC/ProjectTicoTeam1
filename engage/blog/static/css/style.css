@@ -2,6 +2,11 @@
    font-family: sans-serif;
 }
 
+.content {
+  padding: 10em;
+  text-align: center;
+}
+
 .logo {color:#F24034}
 
 body {
