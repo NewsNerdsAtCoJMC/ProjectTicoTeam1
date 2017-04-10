@@ -1,5 +1,5 @@
 * {
-   font-family: sans-serif; 
+   font-family: sans-serif;
 }
 
 .logo {color:#F24034}
@@ -10,34 +10,33 @@ body {
 	padding: 0;
 }
 
-h1 { 
+h1 {
 font-size: 2em;
-   position: absolute; 
-   top: 200px; 
-   left: 0; 
-   width: 100%; 
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
 }
 
 
 h2 {
 	font-size: 1.5em;
-	
+
 }
 
 
-
-h1 span { 
-   color: white; 
-   font: bold 24px/45px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
+h1 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
+   padding: 10px;
 }
 
 
 p, ul, ol {
-    font-size: 1em;   
+    font-size: 1em;
 }
 
 a:link {
@@ -67,11 +66,11 @@ header {
     position: absolute; top: 60px; left: 40px; text-align: center; color: white;
 }
 
-.text { 
-   position: absolute; 
-   top: 200px; 
-   left: 0; 
-   width: 100%; 
+.text {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
 }
 
 group {
@@ -85,56 +84,62 @@ group {
 
 /* Grid */
 .container-fluid {
-    max-width: 1200px; 
+    max-width: 1200px;
     background-color: #ffffff;
     padding: 0;
 }
 
-
-
 .blog-headline {
     color: #F24034;
-   position: relative;
-margin: 2em;
-text-align: center; 
+    position: relative;
+    margin: 2em;
+    text-align: center;
 }
 
-.portfolio-item1 {margin-left: 200px;
-padding-bottom: 2em;
+.portfolio-item1 {
+    margin-left: 200px;
+    padding-bottom: 2em;
 }
 
-.portfolio-item2 {margin-left: 6em;
+.portfolio-item2 {
+    margin-left: 6em;
 }
 
-.modaltext {padding-top: 2em;
+.modaltext {
+    padding-top: 2em;
 }
 
 .img-recent {
-	width: 341px;
-	height: 200px;
+	  width: 341px;
+	  height: 200px;
 }
 
-text-muted small {font-size: 3em;
+text-muted small {
+    font-size: 3em;
 }
 
 .img-circle {
     border-radius: 50%;
-	width: 200px;
-	height: 200px;
-	padding: 0;
-	margin: 0;
+	  width: 200px;
+	  height: 200px;
+	  padding: 0;
+	  margin: 0;
 }
 
-.secondrow {margin-top: 2em;
+.secondrow {
+    margin-top: 2em;
 }
 
-.footer {margin-top: 10em;
+.footer {
+    margin-top: 10em;
 }
 
-.pagination-sm {margin-left: 2em;
+.pagination-sm {
+    margin-left: 2em;
 }
 
-.last {margin-top: 1em;
+.last {
+    margin-top: 1em;
 }
 
 
@@ -173,7 +178,6 @@ text-muted small {font-size: 3em;
     color: #F24034;
 }
 
-
 /* Contact form */
 
 
@@ -204,13 +208,12 @@ body {
 @charset "UTF-8";
 /* CSS Document */
 body {
-	
+
 }
 
 * {
 	font-family: sans-serif;
 }
-
 
 .margintop {
 	margin-top: 1.5em;
@@ -237,7 +240,6 @@ a:visited {
 	text-decoration: underline;
 	font-style: italic;
 }
-
 
 /*Grid*/
 .container-fluid {
@@ -292,7 +294,6 @@ ul {
 	text-align: right;
 }
 
-
 .text {
 	padding: 1em;
 	margin: 1em;
@@ -314,31 +315,25 @@ ul {
 }
 
 a {
-target-name: new; 
+target-name: new;
 target-new: tab;
 }
 
-.image { 
-   position: relative; 
+.image {
+   position: relative;
    width: 100%; /* for IE 6 */
-background-image: 
+background-image:
 	   /* top, transparent red */
 	   linear-gradient(
-		 rgba(0, 0, 0, 0.45), 
+		 rgba(0, 0, 0, 0.45),
 		 rgba(0, 0, 0, 0.45)
 	   ),
 	   /* your image */
 	   url(http://newsroom.unl.edu/announce/files/file14021.png);
-	
+
 	background-attachment: scroll;
 	background-size:cover;
 	background-position: center;
 	position:relative;
 	color:#fff;
-	
-	
 }
-
-
-
-
