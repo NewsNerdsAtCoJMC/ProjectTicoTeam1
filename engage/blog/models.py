@@ -1,19 +1,22 @@
+import os
 from django.db import models
 
 class Author(models.Model):
     name = models.CharField(max_length=255)
     name_slug = models.SlugField()
     bio = models.TextField()
-    mugshot = models.ImageField(upload_to="Users/lera_alfimova/ProjectTicoTeam1/engage/engage/uploads/", blank=True, null=True)
+    mugshot = models.ImageField(upload_to="media/", blank=True, null=True)
     def __str__(self):
         return self.name
 
 class Image(models.Model):
-    image = models.ImageField(upload_to="Users/lera_alfimova/ProjectTicoTeam1/engage/engage/uploads/")
+    image = models.ImageField(upload_to="media/")
     cutline = models.TextField()
     credit = models.ManyToManyField(Author)
     def __str__(self):
         return "%s" % self.image
+    def filename(self):
+        return os.path.basename(self.image)
 
 
 class Post(models.Model):

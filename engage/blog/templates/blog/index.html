@@ -1,23 +1,215 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="row center-xs content">
-<ul>
-{% for object in author_line%}
-<li>{{ object.name }}</li>
-<li>{{ object.bio }}</li>
-<li>{{ object.mugshot }}</li>
+    <div class="row blog-headline center-xs">
+    <h2>Explore Lincoln</h2></div>
+    
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+
+    </div>
+    
+    <div class=row center-xs>
+    <div class="col-md-4 col-sm-6 portfolio-item1 center-xs">
+                    <a href="/housing/" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://housing.unl.edu/images/featured-promo/Housing_Marquee_9_23.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Housing</h4>
+                        <p class="text-muted small">Check out our interactive map</p>
+                    </div>
+                </div>
+    
+    <div class="col-md-4 col-sm-6 portfolio-item2 center-xs">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://bloximages.newyork1.vip.townnews.com/dailynebraskan.com/content/tncms/assets/v3/editorial/f/f6/ff6da5e2-beca-11e3-989a-001a4bcf6878/53436833a07f8.image.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Transportation</h4>
+                        <p class="text-muted small">Best ways to navigate</p>
+                    </div>
+                </div>
+        </div>
+        
+        
+     <div class=row blog-headline center-xs>
+        
+    <div class="col-md-4 col-sm-6 portfolio-item1 center-xs">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://3hm4vx15otpx2n5mp13bqbsk-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/foodie-mamas.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Food</h4>
+                        <p class="text-muted small">Foodie's paradise</p>
+                    </div>
+                </div>
+    
+    <div class="col-md-4 col-sm-6 portfolio-item2 center-xs">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.liedcenter.org/sites/default/files/images/page/NewLiedphoto_creditTomTidball_0.jpg.crop_display.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Entertainment</h4>
+                        <p class="text-muted small">Concerts, exhibitions, movies, hiking et al</p>
+                    </div>
+                </div>
+        </div>
+  
+    
+     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Housing in Lincoln</h2>
+                            <hr class="star-primary">
+                            <img src="http://housing.unl.edu/images/featured-promo/Housing_Marquee_9_23.jpg" class="img-responsive img-centered" alt="A project with local artists and transit">
+                            <p class=modaltext>Lorem ipsum dolor sit amet, an est mutat facer, bonorum referrentur ut eum, numquam equidem dissentiet ad his. Cu deserunt neglegentur usu, sed aperiri commune detraxit in. Homero mollis aeterno nam no, ius ex harum ocurreret conclusionemque, eos ne justo verterem pericula. Eleifend tractatos aliquando vim an, vero vide ipsum ei nec, ex eos aliquid denique definiebas. Mea stet verterem et. Cu per fugit omnes consectetuer, prima mollis nam te.
+
+Suscipit urbanitas est ea, sit ei mollis habemus. No eos dicat feugiat, vitae adipisci repudiandae cu sea. Facer aliquid ne est, an sea facer possit temporibus. Sint putent ne eam.
+
+Duo lorem nostrum abhorreant at. Mei odio maiorum accusam ad. Sonet repudiandae ea cum. Nam et nostrum adipiscing. In perpetua salutandi intellegebat his, oporteat patrioque sed id. Qui munere interesset ea.
+
+Saperet volumus nominavi sit ei. Has ex novum appetere. Laboramus definiebas accommodare vis te, no dolore accumsan pri. Te alterum euismod mei, cum putent salutatus laboramus ex. Cum in quis amet menandri, ex pro maiorum appellantur.
+
+Iriure ancillae scripserit no per, autem aeque expetendis eu has. Sit praesent similique te, in tale apeirian vel, mel ea bonorum inimicus. Cu has delectus principes. Ei eos nonumy eripuit delicatissimi. No sea malis audiam, ea viris impetus cum, qui ei nisl feugait consequat. Accumsan adipisci complectitur ei mei, elit impetus gloriatur et has.<br><a href="http://alfimova.createunl.com/engage/article.html"> Learn more</a></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+         </div>
+          </div>
+      </div>
+        
+    </section>
+    
+    
+    <!-- Most Recent Articles -->
+
+	<div class="row blog-headline center-xs">
+		<div class="col-xs-12">
+			<h2> Most recent articles </h2>
+		</div>
+	</div>
+
+
+	<div class="row">
+{% for object in post_line %}
+		 <div class="col-md-4 col-sm-6 center-xs">
+			<img class="img-recent"  src="https://media.glassdoor.com/o/ac/73/88/bb/oakdale-minnesota-hy-vee.jpg">
+			<p> <a href="{{ object.get_absolute_url }}" target="_blank"> <p class="text-muted small">{{ object.headline }}</p></a></p>
+		</div>
+
 {% endfor %}
-</ul>
+	</div>
+
+    
+    <!-- Our Team -->
+	<div class="row center-xs">
+		<div class="col-xs-12 blog-headline">
+            <div id="meet">
+            <h2> Meet the Team</h2>
+            </div>
+		</div>
+	</div>
+	
+	<!-- First Row Members -->
+	<div class="row">
+		<div class="col-xs-3 center-xs">
+			<img class="img-circle" src="img/dan_zhao.jpg">
+			<p> Dan Zhao </p>
+		</div>
+		
+		<div class="col-xs-3 center-xs">
+			<img class="img-circle" src="img/alyssa_amen.jpg">
+			<p> Alyssa Amen </p>
+		</div>
+		
+		<div class="col-xs-3 center-xs">
+			<img class="img-circle" src="img/lera_alfimova.jpg">
+			<p> Lera Alfimova</p>
+		</div>
+		
+		<div class="col-xs-3 center-xs">
+			<img class="img-circle" src="img/chase_dodge.jpg">
+			<p> Chase Dodge</p>
+		</div>
+	</div>
+		
+		
+	
+	<!-- Second Row Members -->
+	<div class="row secondrow">
+		<div class="col-xs-3 center-xs">
+			<img class="img-circle" src="img/alec_hein.jpg">
+			<p> Alec Hein </p>
+		</div>
+		
+		<div class="col-xs-3 center-xs">
+			<img class="img-circle" src="img/bailey_kelley.jpg">
+			<p> Bailey Kelley</p>
+		</div>
+		
+		<div class="col-xs-3 center-xs">
+			<img class="img-circle" src="img/brina_miller.jpg">
+			<p> Brina Miller</p>
+		</div>
+		
+		<div class="col-xs-3 center-xs">
+			<img class="img-circle" src="img/maddie_sanders.jpg">
+			<p> Maddie Sanders</p>
+		</div>
+	</div>
+
+
+
+
+
+
+
+<div class="row center-xs content">
 
 <ul>
 {% for object in post_line%}
 <li>{{ object.publication_date }}</li>
 <li>{{ object.headline }}</li>
+<li>{{ object.author }}</li>
 <li>{{ object.text }}</li>
-<li>{{ object.images }}</li>
+<li>{% for pic in object.images.all %}<img src="{{ pic.image }}" />{% endfor %}</li>
 {% endfor %}
 </ul>
 </div>
 
 {% endblock %}
+
