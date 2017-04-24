@@ -24,7 +24,8 @@ def housing(request):
     return render(request, 'blog/housing.html', context)
 
 def transportation(request):
-    context = {}
+    posts = Post.objects.filter(tag__tag_slug="transportation")
+    context = {'posts': posts}
     return render(request, 'blog/transportation.html', context)
 
 def food(request):
