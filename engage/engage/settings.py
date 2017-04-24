@@ -120,6 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = '/blog/media/'
+MEDIA_ROOT = 'blog/media/'
 
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
