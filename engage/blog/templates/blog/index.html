@@ -3,13 +3,13 @@
 
     <div class="row blog-headline center-xs">
     <h2>Explore Lincoln</h2></div>
-    
+
     <!-- Blog Section -->
     <section id="blog">
         <div class="container">
 
     </div>
-    
+
     <div class=row center-xs>
     <div class="col-md-4 col-sm-6 portfolio-item1 center-xs">
                     <a href="/housing/" class="portfolio-link" data-toggle="modal">
@@ -25,7 +25,7 @@
                         <p class="text-muted small">Check out our interactive map</p>
                     </div>
                 </div>
-    
+
     <div class="col-md-4 col-sm-6 portfolio-item2 center-xs">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -41,10 +41,10 @@
                     </div>
                 </div>
         </div>
-        
-        
+
+
      <div class=row blog-headline center-xs>
-        
+
     <div class="col-md-4 col-sm-6 portfolio-item1 center-xs">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -59,7 +59,7 @@
                         <p class="text-muted small">Foodie's paradise</p>
                     </div>
                 </div>
-    
+
     <div class="col-md-4 col-sm-6 portfolio-item2 center-xs">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -75,8 +75,8 @@
                     </div>
                 </div>
         </div>
-  
-    
+
+
      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -85,9 +85,9 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
+
+
+
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -111,10 +111,10 @@ Iriure ancillae scripserit no per, autem aeque expetendis eu has. Sit praesent s
          </div>
           </div>
       </div>
-        
+
     </section>
-    
-    
+
+
     <!-- Most Recent Articles -->
 
 	<div class="row blog-headline center-xs">
@@ -127,14 +127,13 @@ Iriure ancillae scripserit no per, autem aeque expetendis eu has. Sit praesent s
 	<div class="row">
 {% for object in posts %}
 		 <div class="col-md-4 col-sm-6 center-xs">
-			<img class="img-recent"  src="https://media.glassdoor.com/o/ac/73/88/bb/oakdale-minnesota-hy-vee.jpg">
+			<a href="{{ object.get_absolute_url }}" target="_blank"> {% for pic in object.images.all %}<img class="img-recent" src="{{ pic.image.url }}" />{% endfor %}{{ object.images }}</a>
 			<p> <a href="{{ object.get_absolute_url }}" target="_blank"> <p class="text-muted small">{{ object.headline }}</p></a></p>
 		</div>
-
 {% endfor %}
 	</div>
 
-    
+
     <!-- Our Team -->
 	<div class="row center-xs">
 		<div class="col-xs-12 blog-headline">
@@ -143,53 +142,25 @@ Iriure ancillae scripserit no per, autem aeque expetendis eu has. Sit praesent s
             </div>
 		</div>
 	</div>
-	
+
 	<!-- First Row Members -->
 	<div class="row">
+  {% for object in authors %}
 		<div class="col-xs-3 center-xs">
-			<img class="img-circle" src="img/dan_zhao.jpg">
-			<p> Dan Zhao </p>
+			{% for pic in object.mugshot.all %}<img class="img-circle" src="{{ pic.image.url }}" />{% endfor %}
+			<p> {{ object.name }} </p>
 		</div>
-		
-		<div class="col-xs-3 center-xs">
-			<img class="img-circle" src="img/alyssa_amen.jpg">
-			<p> Alyssa Amen </p>
-		</div>
-		
-		<div class="col-xs-3 center-xs">
-			<img class="img-circle" src="img/lera_alfimova.jpg">
-			<p> Lera Alfimova</p>
-		</div>
-		
-		<div class="col-xs-3 center-xs">
-			<img class="img-circle" src="img/chase_dodge.jpg">
-			<p> Chase Dodge</p>
-		</div>
+  {% endfor %}
 	</div>
-		
-		
-	
+
 	<!-- Second Row Members -->
 	<div class="row secondrow">
+  {% for object in authors %}
 		<div class="col-xs-3 center-xs">
-			<img class="img-circle" src="img/alec_hein.jpg">
-			<p> Alec Hein </p>
+			{% for pic in object.mugshot.all %}<img class="img-circle" src="{{ pic.image.url }}" />{% endfor %}
+			<p> {{ object.name }} </p>
 		</div>
-		
-		<div class="col-xs-3 center-xs">
-			<img class="img-circle" src="img/bailey_kelley.jpg">
-			<p> Bailey Kelley</p>
-		</div>
-		
-		<div class="col-xs-3 center-xs">
-			<img class="img-circle" src="img/brina_miller.jpg">
-			<p> Brina Miller</p>
-		</div>
-		
-		<div class="col-xs-3 center-xs">
-			<img class="img-circle" src="img/maddie_sanders.jpg">
-			<p> Maddie Sanders</p>
-		</div>
+  {% endfor %}
 	</div>
 
 

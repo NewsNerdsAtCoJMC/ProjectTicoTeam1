@@ -4,18 +4,18 @@ from django.http import HttpResponse
 from blog.models import Author, Post
 
 def index(request):
-    posts = Post.objects.all() 
-    context = {'posts': posts}
+    posts = Post.objects.all()
+    authors = Author.objects.all()
+    context = {'posts': posts, 'authors': authors}
     return render(request, 'blog/index.html', context)
 
-
 def blog(request):
-    posts = Post.objects.all() 
+    posts = Post.objects.all()
     context = {'posts': posts}
     return render(request, 'blog/blog.html', context)
 
 def blog_detail(request, pk):
-    post = Post.objects.get(id=pk) 
+    post = Post.objects.get(id=pk)
     context = {'post': post}
     return render(request, 'blog/blog_detail.html', context)
 

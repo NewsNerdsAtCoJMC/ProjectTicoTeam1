@@ -3,13 +3,12 @@
 
 <div class="row center-xs content">
 
-
 <ul>
 <li>{{ post.publication_date }}</li>
 <li>{{ post.headline }}</li>
-<li>{{ post.writer }}</li>
+<li>{{ post.author }}</li>
 <li>{{ post.text }}</li>
-<li>{% for pic in post.images.all %}<img src="{{ pic.image }}" />{% endfor %}</li>
+<li>{% for pic in post.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
 
 </ul>
 </div>

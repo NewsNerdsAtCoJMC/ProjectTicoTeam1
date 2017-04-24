@@ -11,11 +11,9 @@
 <li><a href="{{ object.get_absolute_url }}">{{ object.headline }}</a></li>
 <li>{% for writer in object.author.all %}{{ writer.name }} {% endfor %}</li>
 <li>{{ object.text }}</li>
-<li>{% for pic in object.images.all %}<img src="{{ pic.image }}" />{% endfor %}</li>
+<li>{% for pic in object.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
 {% endfor %}
 </ul>
 </div>
 
 {% endblock %}
-
-    
