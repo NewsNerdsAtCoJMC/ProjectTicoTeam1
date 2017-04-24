@@ -24,4 +24,11 @@ from blog import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^blog/$', views.blog, name='blog'),
+    url(r'^blog/post/(?P<pk>\d+)', views.blog_detail, name='blog_detail'),
+    url(r'^housing/$', views.housing, name='housing'),  
+    url(r'^food/$', views.food, name='food'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+

@@ -18,6 +18,11 @@ class Image(models.Model):
     def filename(self):
         return os.path.basename(self.image)
 
+class Tag(models.Model):
+    tag = models.CharField(max_length=255)
+    tag_slug = models.SlugField()
+    def __str__(self):
+        return self.tag
 
 class Post(models.Model):
     headline = models.CharField(max_length=255)
@@ -25,5 +30,8 @@ class Post(models.Model):
     images = models.ManyToManyField(Image)
     author = models.ManyToManyField(Author)
     publication_date = models.DateTimeField()
+    tag = models.ManyToManyField(Tag)
     def __str__(self):
         return self.headline
+    def get_absolute_url(self):
+        return "/blog/post/%i" % self.id

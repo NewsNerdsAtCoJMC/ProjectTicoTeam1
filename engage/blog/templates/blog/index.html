@@ -125,7 +125,7 @@ Iriure ancillae scripserit no per, autem aeque expetendis eu has. Sit praesent s
 
 
 	<div class="row">
-{% for object in post_line %}
+{% for object in posts %}
 		 <div class="col-md-4 col-sm-6 center-xs">
 			<img class="img-recent"  src="https://media.glassdoor.com/o/ac/73/88/bb/oakdale-minnesota-hy-vee.jpg">
 			<p> <a href="{{ object.get_absolute_url }}" target="_blank"> <p class="text-muted small">{{ object.headline }}</p></a></p>
@@ -193,23 +193,4 @@ Iriure ancillae scripserit no per, autem aeque expetendis eu has. Sit praesent s
 	</div>
 
 
-
-
-
-
-
-<div class="row center-xs content">
-
-<ul>
-{% for object in post_line%}
-<li>{{ object.publication_date }}</li>
-<li>{{ object.headline }}</li>
-<li>{{ object.author }}</li>
-<li>{{ object.text }}</li>
-<li>{% for pic in object.images.all %}<img src="{{ pic.image }}" />{% endfor %}</li>
-{% endfor %}
-</ul>
-</div>
-
 {% endblock %}
-
