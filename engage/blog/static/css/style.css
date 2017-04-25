@@ -44,20 +44,6 @@ p, ul, ol {
     font-size: 1em;
 }
 
-a:link {
-    color: #F24034;
-    text-decoration: none;
-}
-a:visited {
-    color: dimgray;
-    text-decoration: underline;
-    font-style: italic;
-}
-a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
 header {
   background-image:url(http://projectcontrol.com/wp-content/uploads/2015/06/c_2073_0002-copy-e1439213780228.jpg);
   background-size: cover;
@@ -230,21 +216,6 @@ p, ul, ol {
 	font-size: 1em
 }
 
-a:link {
-	color:black;
-	text-decoration: none;
-}
-
-a:hover {
-	color:  #F24034;
-	text-decoration: underline;
-}
-
-a:visited {
-	color: darkred;
-	text-decoration: underline;
-	font-style: italic;
-}
 
 /*Grid*/
 .container-fluid {
@@ -341,4 +312,7 @@ background-image:
 	background-position: center;
 	position:relative;
 	color:#fff;
+}
+
+.article {padding-bottom: 5em;
 }
