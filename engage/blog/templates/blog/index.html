@@ -27,7 +27,7 @@
                 </div>
 
     <div class="col-md-4 col-sm-6 portfolio-item2 center-xs">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="/transportation/" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -46,7 +46,7 @@
      <div class=row blog-headline center-xs>
 
     <div class="col-md-4 col-sm-6 portfolio-item1 center-xs">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="/food/" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -61,7 +61,7 @@
                 </div>
 
     <div class="col-md-4 col-sm-6 portfolio-item2 center-xs">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="/entertainment" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -124,10 +124,10 @@ Iriure ancillae scripserit no per, autem aeque expetendis eu has. Sit praesent s
 	</div>
 
 
-	<div class="row">
+	<div class="row center-xs">
 {% for object in posts %}
-		 <div class="col-md-4 col-sm-6 center-xs">
-			<a href="{{ object.get_absolute_url }}" target="_blank"> {% for pic in object.images.all %}<img class="img-recent" src="{{ pic.image.url }}" />{% endfor %}{{ object.images }}</a>
+		 <div class="col-xs-4">
+			<a href="{{ object.get_absolute_url }}" target="_blank"> {% for pic in object.images.all %}<img class="img-recent" src="{{ pic.image.url }}" />{% endfor %}</a>
 			<p> <a href="{{ object.get_absolute_url }}" target="_blank"> <p class="text-muted small">{{ object.headline }}</p></a></p>
 		</div>
 {% endfor %}
@@ -143,25 +143,14 @@ Iriure ancillae scripserit no per, autem aeque expetendis eu has. Sit praesent s
 		</div>
 	</div>
 
-	<!-- First Row Members -->
+	<!-- Members -->
 	<div class="row">
   {% for object in authors %}
 		<div class="col-xs-3 center-xs">
-			{% for pic in object.mugshot.all %}<img class="img-circle" src="{{ pic.image.url }}" />{% endfor %}
+			<img class="img-circle" src="{{ object.mugshot.url }}" />
 			<p> {{ object.name }} </p>
 		</div>
   {% endfor %}
 	</div>
-
-	<!-- Second Row Members -->
-	<div class="row secondrow">
-  {% for object in authors %}
-		<div class="col-xs-3 center-xs">
-			{% for pic in object.mugshot.all %}<img class="img-circle" src="{{ pic.image.url }}" />{% endfor %}
-			<p> {{ object.name }} </p>
-		</div>
-  {% endfor %}
-	</div>
-
 
 {% endblock %}
