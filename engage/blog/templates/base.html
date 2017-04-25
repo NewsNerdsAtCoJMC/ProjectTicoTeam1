@@ -5,10 +5,6 @@
 <title>Engage</title>
 <meta name="description" content="">
 
-<!-- Bootstrap Javascript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <!-- Needed for RWD -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,22 +18,23 @@
 <!-- Navigation -->
 
 <body>
-<div class=row>
-   <nav class="navbar navbar-fixed-top navbar-left">
-    <div class="container-fluid">
-
+    <nav>
+<div class="row">
+    
  <div class="col-xs-2">
-<div class="navbar-header">
-  <a class="navbar-brand" href="/index/">
+  <a href="/index">
     <img alt="Brand" src="https://pp.userapi.com/c837421/v837421523/32195/-kiUtmUhvEI.jpg">
   </a>
 </div>
-</div>
-   <div class="col-xs-10">
-        <ul  class="navbar-right">
+    
+     <div class="col-xs-6">
+        </div>
+
+   <div class="col-xs-4">
+        <ul>
 <li><a href="#meet">Meet the team</a></li>
 <li><a href="#connect">Connect with us</a></li>
-<div class="dropdown">
+<li><div class="dropdown">
 <button class="dropbtn">Explore Lincoln</button>
 <div class="dropdown-content">
 <a href="/housing/">Housing</a>
@@ -46,11 +43,11 @@
   <a href="/entertainment/">Entertainment</a>
 </div>
 </div>
+    </li>
         </ul>
 </div>
-      </div>
-</nav>
 </div>
+        </nav>
 
 {% block content %}{% endblock %}
 

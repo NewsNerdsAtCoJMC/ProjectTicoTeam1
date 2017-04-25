@@ -1,13 +1,10 @@
+
 * {
    font-family: sans-serif;
 }
 
-.content {
-  padding: 10em;
-  text-align: center;
-}
 
-.logo {color:#F24034}
+.logo {color:x}
 
 body {
 	background-color: white;
@@ -64,14 +61,6 @@ header {
    width: 100%;
 }
 
-group {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
 
 /* Grid */
 .container-fluid {
@@ -87,14 +76,6 @@ group {
     text-align: center;
 }
 
-.portfolio-item1 {
-    margin-left: 200px;
-    padding-bottom: 2em;
-}
-
-.portfolio-item2 {
-    margin-left: 6em;
-}
 
 .modaltext {
     padding-top: 2em;
@@ -187,7 +168,6 @@ text-muted small {
 
 body {
 	background-color: #ffffff;
-	padding: 50px;
 	text-align: center;
 }
 
@@ -196,15 +176,6 @@ body {
     height: 25px;
 }
 
-@charset "UTF-8";
-/* CSS Document */
-body {
-
-}
-
-* {
-	font-family: sans-serif;
-}
 
 .margintop {
 	margin-top: 1.5em;
@@ -222,38 +193,6 @@ p, ul, ol {
 	max-width: 1200px;
 	background-color: #ffffff;
 	padding: 0;
-}
-
-/*Navigation*/
-nav {
-	clear: both;
-	width: 100%;
-	text-align: center;
-}
-
-nav ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-nav li {
-	width: 25%;
-	display: inline;
-	float: left;
-}
-
-nav li a:link, nav li a:visited {
-	color: #666;
-	text-decoration: none;
-	display: block;
-	text-align: center;
-	padding: 15px;
-	background-color: rgba(255, 255, 255, 1);
-}
-
-nav li a:hover {
-	background-color: rgb(180, 180, 180);
 }
 
 /*Styles*/
