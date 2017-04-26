@@ -26,6 +26,10 @@ p, ul, ol {
 }
 
 
+
+li {display: inline;
+}
+
 header {
   background-image:url(http://projectcontrol.com/wp-content/uploads/2015/06/c_2073_0002-copy-e1439213780228.jpg);
   background-size: cover;
