@@ -60,12 +60,21 @@ header {
          text-align: center;
      }
 
+.post-text {
+  text-align: left;
+  margin-left: 15em;
+  margin-right: 15em;
+}
 
 .post-headline {
      color: #F24034;
     text-align: center;
      }
 
+.transportation {
+  height: 800px;
+  width: 1000px;
+}
 
 /* Grid */
 .container-fluid {
@@ -229,6 +238,7 @@ target-new: tab;
 }
 
 .image {
+  margin-bottom: 1em;
    position: relative;
    width: 100%; /* for IE 6 */
 background-image:
@@ -245,4 +255,3 @@ background-image:
 	background-position: center;
 	position:relative;
     color:#fff;}
-

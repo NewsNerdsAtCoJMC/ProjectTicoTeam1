@@ -7,8 +7,8 @@
 <ul class="post-content">
 <li class="post-headline"><h3>{{ post.headline }}</h3></li>
 <li class="post-image">{% for pic in post.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
-<li class="post-date"><h5>{{ post.publication_date }}</h5></li>
-<li class="post-text">{{ post.text|linebreaks }}</li>
+<li class="post-date"><h4>{{ post.publication_date }}</h4></li>
+<li class="post-text">{{ post.text }}</li>
 </ul>
 </div>
 
