@@ -56,7 +56,9 @@ header {
      height: 300px;
      }
 
-.post-date {margin-top: 1em;
+.post-date {
+       margin-top: 2em;
+       margin-bottom: 2em;
          text-align: center;
      }
 
@@ -70,6 +72,12 @@ header {
      color: #F24034;
     text-align: center;
      }
+
+.post-image {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
 
 .transportation {
   height: 800px;
@@ -117,7 +125,11 @@ text-muted small {
 }
 
 .footer {
-    margin-top: 10em;
+    margin-top: 2em;
+}
+
+#connect {
+  margin-top: 7em;
 }
 
 .pagination-sm {

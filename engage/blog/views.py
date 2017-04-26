@@ -37,5 +37,3 @@ def entertainment(request):
     posts = Post.objects.filter(tag__tag_slug="entertainment")
     context = {'posts': posts}
     return render(request, 'blog/entertainment.html', context)
-
-
