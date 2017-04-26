@@ -2,26 +2,29 @@
 {% block content %}
 
  <style>
-     
+
      .list-image {width: 500px;
      height: 300px;
      }
-     
+
      .post-date {margin-top: 3em;
          text-align: center;
      }
-     
+
      .post-headline{text-align: center;
      }
        .post-headline {
      color: #F24034;
            margin-bottom: 1em;
      }
-          
+
 </style>
 
 <div class="row post-headline center-xs">
-    <h2>Entertainment</h2></div>
+    <h2>Entertainment</h2>
+    <p>“What is there to do in Lincoln, Nebraska?!” was a question I got asked a lot when I announced that I would be moving there for graduate school. As a 20-something coming to Lincoln from a larger city, I felt a bit at a loss.</p>
+    <p>So, naturally, I Googled it. Lots of reviews of fancy restaurants and fun events came up! Little did I know at the time, Lincoln would turn out to be an incredible place filled with lots of local treasures, great restaurants, and fun nightlife.</P>
+</div>
 
 <div class="row center-xs">
 {% for object in posts %}
@@ -34,7 +37,7 @@
 </ul>
        </div>
     {% endfor %}
-    
+
   </div>
 
 

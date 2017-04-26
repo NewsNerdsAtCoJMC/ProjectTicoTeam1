@@ -10,19 +10,20 @@
      .image {margin-top: 3em;
          margin-bottom: 3em;
      }
-     
+
      .post-text {text-align:justify;
      }
-     
+
 </style>
 
 
 <div class="row post-headline center-xs">
-    <h2>Transportation</h2></div>
+    <h2>Transportation</h2>
+</div>
 
 <ul>
 {% for object in posts %}
-<li class = "post-text">{{ object.text }}</li>
+<li class = "post-text">{{ object.text|linebreaks }}</li>
 <li class="image">{% for pic in object.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
 {% endfor %}
 </ul>

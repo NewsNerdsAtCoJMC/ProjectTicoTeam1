@@ -2,24 +2,26 @@
 {% block content %}
 
  <style>
-     
+
      .list-image {width: 500px;
      height: 300px;
      }
-     
+
      .post-date {margin-top: 2.5em;
          text-align: center;
      }
-     
+
      .post-headline{text-align: center;
      color: #F24034;
            margin-bottom: 1em;
      }
-          
+
 </style>
 
 <div class="row post-headline center-xs">
-    <h2>Food</h2></div>
+    <h2>Food</h2>
+    <p>Lincoln has its fair share of restaurants that are “well-kept secrets” -- out-of-the-way places that because of location or other circumstances don’t get as much attention as they should. Here we are sharing our favorites with you! </p>
+</div>
 
 <div class="row center-xs">
 {% for object in posts %}
@@ -32,7 +34,7 @@
 </ul>
        </div>
     {% endfor %}
-    
+
   </div>
 
 
