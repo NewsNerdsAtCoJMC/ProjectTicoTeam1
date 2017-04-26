@@ -1,34 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
- <style>
-
-     .list-image {width: 500px;
-     height: 300px;
-     }
-
-     .post-date {margin-top: 2.5em;
-         text-align: center;
-     }
-
-     .post-headline{text-align: center;
-     color: #F24034;
-           margin-bottom: 1em;
-     }
-
-</style>
 
 <div class="row post-headline center-xs">
     <h2>Food</h2>
-    <p>Lincoln has its fair share of restaurants that are “well-kept secrets” -- out-of-the-way places that because of location or other circumstances don’t get as much attention as they should. Here we are sharing our favorites with you! </p>
-</div>
+    </div>
+    <p class="description">Lincoln has its fair share of restaurants that are “well-kept secrets” -- out-of-the-way places that because of location or other circumstances don’t get as much attention as they should. Here we are sharing our favorites with you! </p>
 
 <div class="row center-xs">
 {% for object in posts %}
  <div class="col-xs-6">
      <ul>
 
-<li class= "list-image">{% for pic in object.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
+<li>{% for pic in object.images.all %}<img class= "list-image" src="{{ pic.image.url }}" />{% endfor %}</li>
 <li class="post-date">{{ object.publication_date }}</li>
 <li class="post-headline"><a href="{{ object.get_absolute_url }}">{{ object.headline }}</a></li>
 </ul>
@@ -36,6 +20,7 @@
     {% endfor %}
 
   </div>
+
 
 
 

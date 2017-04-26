@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'^food/$', views.food, name='food'),
     url(r'^transportation/$', views.transportation, name='transportation'),
     url(r'^entertainment/$', views.entertainment, name='entertainment'),
+    url(r'^index/$', views.index, name='index'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

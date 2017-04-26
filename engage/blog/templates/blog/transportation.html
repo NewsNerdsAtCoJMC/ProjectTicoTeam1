@@ -11,7 +11,7 @@
          margin-bottom: 3em;
      }
 
-     .post-text {text-align:justify;
+     .post-text {text-align:left;
      }
 
 </style>
@@ -21,11 +21,14 @@
     <h2>Transportation</h2>
 </div>
 
-<ul>
 {% for object in posts %}
-<li class = "post-text">{{ object.text|linebreaks }}</li>
+<ul>
+<li class="image"> </li>
+<li>{{ object.text|linebreaks }}</li>
 <li class="image">{% for pic in object.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
+    </ul>
+
 {% endfor %}
-</ul>
+
 
 {% endblock %}
