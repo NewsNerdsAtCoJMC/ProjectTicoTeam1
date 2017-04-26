@@ -1,39 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
- <style>
-
-     .post-content {margin-top: 3em;}
-     .post-date {text-align:justify;
-     }
-
-     .post-headline {
-     text-align:center;
-     color: #F24034;
-        font-size: 25px;
-     }
-
-        .post-text {text-align:left;
-            padding: 2em;
-        }
-
-     .post-image {text-align: center;
-         margin-bottom: 3em;
-     }
-
-
-    </style>
 
 <div class="row">
 
 <ul class="post-content">
-<li class="post-headline">{{ post.headline }}</li>
+<li class="post-headline"><h3>{{ post.headline }}</h3></li>
 <li class="post-image">{% for pic in post.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
-<li class="post-date">{{ post.publication_date }}</li>
-<li class="post-date">{{ post.author }}</li>
+<li class="post-date"><h5>{{ post.publication_date }}</h5></li>
 <li class="post-text">{{ post.text|linebreaks }}</li>
-
-
 </ul>
 </div>
 
