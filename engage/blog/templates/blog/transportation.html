@@ -24,8 +24,8 @@
 {% for object in posts %}
 <ul>
 <li class="image"> </li>
-<li>{{ object.text|linebreaks }}</li>
-<li class="image">{% for pic in object.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
+<li>{{ object.text|linebreaksbr }}</li>
+<li>{% for pic in object.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
     </ul>
 
 {% endfor %}

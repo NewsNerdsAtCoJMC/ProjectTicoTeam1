@@ -27,11 +27,12 @@
 <div class="row">
 
 <ul class="post-content">
+<li class="post-headline">{{ post.headline }}</li>
+<li class="post-image">{% for pic in post.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
 <li class="post-date">{{ post.publication_date }}</li>
 <li class="post-date">{{ post.author }}</li>
-<li class="post-headline">{{ post.headline }}</li>
 <li class="post-text">{{ post.text|linebreaks }}</li>
-<li class="post-image">{% for pic in post.images.all %}<img src="{{ pic.image.url }}" />{% endfor %}</li>
+
 
 </ul>
 </div>

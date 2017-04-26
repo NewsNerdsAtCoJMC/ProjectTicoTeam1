@@ -11,7 +11,7 @@
 
     <!-- Blog Section -->
 <div class="container">
-    
+
       <!-- Header -->
 
 
@@ -109,8 +109,8 @@
                 col-sm-8
                 col-md-6
                 col-lg-4">
-			<img class="img-circle" src="{{ object.mugshot.url }}" />
-			<p> {{ object.name }} </p>
+			<img class="img-circle" src="{{ object.mugshot.url|default_if_none:'#' }}" />
+      <p> {{ object.name }} </p>
 		</div>
   {% endfor %}
 	</div>
