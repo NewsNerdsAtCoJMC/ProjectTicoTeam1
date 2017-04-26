@@ -9,7 +9,7 @@
 
 <div class="row center-xs">
 {% for object in posts %}
- <div class="col-xs-12">
+ <div class="col-xs-6">
      <ul>
 
 <li>{% for pic in object.images.all %}<img class= "list-image" src="{{ pic.image.url }}" />{% endfor %}</li>
@@ -21,6 +21,8 @@
 
   </div>
 
+<div class="col-xs-6">
+</div>
 
 
 
