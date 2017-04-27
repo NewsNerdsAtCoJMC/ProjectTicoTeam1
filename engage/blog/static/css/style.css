@@ -57,9 +57,8 @@ header {
      }
 
 .post-date {
-       margin-top: 2em;
-       margin-bottom: 2em;
-         text-align: center;
+       margin-top: 1em;
+       text-align: center;
      }
 
 .post-text {
@@ -71,6 +70,7 @@ header {
 .post-headline {
      color: #F24034;
     text-align: center;
+    margin-bottom: 3em;
      }
 
 .post-image {
