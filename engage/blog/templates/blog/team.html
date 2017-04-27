@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row post-headline center-xs">
+    <h2>Meet the Team</h2>
+</div>
+
+	<!-- Members -->
+	<div class="row">
+  {% for object in members %}
+		<div class="col-xs-12
+                col-sm-8
+                col-md-6
+                col-lg-4">
+			<img class="img-circle" src="{{ object.mugshot.url|default_if_none:'#' }}" />
+      <p> {{ object.name }} </p>
+		</div>
+  {% endfor %}
+	</div>
+
+{% endblock %}

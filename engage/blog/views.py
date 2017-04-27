@@ -37,3 +37,8 @@ def entertainment(request):
     posts = Post.objects.filter(tag__tag_slug="entertainment")
     context = {'posts': posts}
     return render(request, 'blog/entertainment.html', context)
+
+def team(request):
+    members = Author.objects.all()
+    context = {'members': members}
+    return render(request, 'blog/team.html', context)

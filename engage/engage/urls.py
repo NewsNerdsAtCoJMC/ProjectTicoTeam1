@@ -26,12 +26,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^blog/$', views.blog, name='blog'),
     url(r'^blog/post/(?P<pk>\d+)', views.blog_detail, name='blog_detail'),
-    url(r'^housing/$', views.housing, name='housing'),  
+    url(r'^housing/$', views.housing, name='housing'),
     url(r'^food/$', views.food, name='food'),
     url(r'^transportation/$', views.transportation, name='transportation'),
     url(r'^entertainment/$', views.entertainment, name='entertainment'),
     url(r'^index/$', views.index, name='index'),
+    url(r'^team/$', views.team, name='team'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
-
