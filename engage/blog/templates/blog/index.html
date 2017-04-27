@@ -80,7 +80,7 @@
 
 
 
-	<div>
+	<div class="row">
 {% for object in posts %}
 		 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" style="padding-bottom:1em;">
 			<a href="{{ object.get_absolute_url }}" target="_blank"> {% for pic in object.images.all %}<img class="img-recent" src="{{ pic.image.url }}" />{% endfor %}</a>
